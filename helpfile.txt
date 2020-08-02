@@ -1,0 +1,24 @@
+#if
+Used for conditional control
+
+#switch
+Used for conditional control,
+which if one condition is
+true, all the others are false
+
+#for
+Used for repetition "by steps"
+
+#while
+Used for repetition until one
+statement become false
+
+#do
+Makes the same of while
+structure. But it checks the
+statement after all the
+command block be executed
+
+#break
+It immediately stops the current
+structure which has been called
