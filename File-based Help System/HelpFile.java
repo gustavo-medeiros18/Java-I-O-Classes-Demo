@@ -1,5 +1,4 @@
 //This class must be used in another class
-
 import java.io.*;
 
 class HelpFile {
