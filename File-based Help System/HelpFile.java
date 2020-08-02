@@ -1,4 +1,3 @@
-//This class must be used in another class
 import java.io.*;
 
 class HelpFile {
@@ -20,13 +19,15 @@ class HelpFile {
           topic = br.readLine();
 
           if (what.compareTo(topic) == 0) { //Founded topic
-            while ((info != null) && info.compareTo("") != 0) {
+            while ((info != null) && (info.compareTo("#end") != 0)) {
               info = br.readLine();
 
-              if (info != null)
+              if (info.compareTo("#end") != 0)
                 System.out.println(info);
             }
 
+            System.out.println();
+            
             return true;
           }
         }
@@ -37,9 +38,7 @@ class HelpFile {
       System.out.println("I/O error: " + exc);
     }
 
-    finally {
-      return false;
-    }
+    return false;
   }
 
   public String getSelection() {

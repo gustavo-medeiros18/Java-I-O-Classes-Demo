@@ -9,7 +9,9 @@ public class Main {
     while (topic.compareTo("stop") != 0) {
       topic = help.getSelection();
 
-      if (!help.helpOn(topic))
+      if (topic.compareTo("stop") == 0)
+        break;
+      else if (!help.helpOn(topic))
         System.out.println("Topic not found");
     }
   }

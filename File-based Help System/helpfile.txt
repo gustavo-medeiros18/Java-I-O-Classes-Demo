@@ -1,24 +1,30 @@
 #if
 Used for conditional control
+#end
 
 #switch
 Used for conditional control,
 which if one condition is
 true, all the others are false
+#end
 
 #for
 Used for repetition "by steps"
+#end
 
 #while
 Used for repetition until one
 statement become false
+#end
 
 #do
 Makes the same of while
 structure. But it checks the
 statement after all the
 command block be executed
+#end
 
 #break
 It immediately stops the current
 structure which has been called
+#end
